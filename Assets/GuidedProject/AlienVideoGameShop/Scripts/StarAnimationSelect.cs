@@ -6,6 +6,6 @@ public class StarAnimationSelect : StateMachineBehaviour
 {
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        animator.SetInteger("IdleSelect", Random.Range(1, 4));
+        animator.SetInteger("IdleSelect", Random.Range(1, 3));
     }
 }
