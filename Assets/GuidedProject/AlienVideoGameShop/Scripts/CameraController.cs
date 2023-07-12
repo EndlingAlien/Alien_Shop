@@ -6,12 +6,14 @@ public class CameraController : MonoBehaviour
 {
     public GameObject camOne;
     public GameObject camTwo;
+    public GameObject camThree;
 
     // Start is called before the first frame update
     void Start()
     {
         camOne.SetActive(true);
         camTwo.SetActive(false);
+        camThree.SetActive(false);
     }
 
     // Update is called once per frame
@@ -21,11 +23,19 @@ public class CameraController : MonoBehaviour
         {
             camOne.SetActive(true);
             camTwo.SetActive(false);
+            camThree.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
             camOne.SetActive(false);
             camTwo.SetActive(true);
+            camThree.SetActive(false);
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            camOne.SetActive(false);
+            camTwo.SetActive(false);
+            camThree.SetActive(true);
         }
     }
 }
