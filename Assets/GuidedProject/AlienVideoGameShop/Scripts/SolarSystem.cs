@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SolarSystem : MonoBehaviour
 {
-
+    //get the planet gameobject
     public GameObject sun;
     public GameObject P1;
     public GameObject P2;
@@ -24,6 +24,7 @@ public class SolarSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //rotate planet around the sun at X degrees
         P1.transform.RotateAround(sun.transform.position, Vector3.up, 20 * Time.deltaTime);
         P2.transform.RotateAround(sun.transform.position, Vector3.up, 18 * Time.deltaTime);
         P3.transform.RotateAround(sun.transform.position, Vector3.up, 4 * Time.deltaTime);

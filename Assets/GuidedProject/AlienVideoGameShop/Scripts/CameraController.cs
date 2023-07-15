@@ -9,8 +9,9 @@ public class CameraController : MonoBehaviour
     public GameObject camThree;
     public GameObject camFour;
     public GameObject camFive;
+    public GameObject camSix;
 
-    // Start is called before the first frame update
+    //At the start make cam1 active
     void Start()
     {
         camOne.SetActive(true);
@@ -18,11 +19,13 @@ public class CameraController : MonoBehaviour
         camThree.SetActive(false);
         camFour.SetActive(false);
         camFive.SetActive(false);
+        camSix.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Keys: Q-Y, Control cams
         if (Input.GetKeyDown(KeyCode.Q))
         {
             camOne.SetActive(true);
@@ -30,6 +33,7 @@ public class CameraController : MonoBehaviour
             camThree.SetActive(false);
             camFour.SetActive(false);
             camFive.SetActive(false);
+            camSix.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.W))
         {
@@ -38,6 +42,7 @@ public class CameraController : MonoBehaviour
             camThree.SetActive(false);
             camFour.SetActive(false);
             camFive.SetActive(false);
+            camSix.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.E))
         {
@@ -46,6 +51,7 @@ public class CameraController : MonoBehaviour
             camThree.SetActive(true);
             camFour.SetActive(false);
             camFive.SetActive(false);
+            camSix.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.R))
         {
@@ -54,6 +60,7 @@ public class CameraController : MonoBehaviour
             camThree.SetActive(false);
             camFour.SetActive(true);
             camFive.SetActive(false);
+            camSix.SetActive(false);
         }
         else if (Input.GetKeyDown(KeyCode.T))
         {
@@ -62,6 +69,16 @@ public class CameraController : MonoBehaviour
             camThree.SetActive(false);
             camFour.SetActive(false);
             camFive.SetActive(true);
+            camSix.SetActive(false);
+        }
+        else if (Input.GetKeyDown(KeyCode.Y))
+        {
+            camOne.SetActive(false);
+            camTwo.SetActive(false);
+            camThree.SetActive(false);
+            camFour.SetActive(false);
+            camFive.SetActive(false);
+            camSix.SetActive(true);
         }
     }
 }

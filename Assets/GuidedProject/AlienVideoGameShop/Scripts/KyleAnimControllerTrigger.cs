@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class KyleAnimControllerTrigger : MonoBehaviour
 {
+    //Makes Kyle the Robot randomly dance when Key: D is pressed
     private Animator anim;
     private bool canDance = true;
     private float danceCooldown = 20f;
@@ -15,6 +16,7 @@ public class KyleAnimControllerTrigger : MonoBehaviour
 
     private void Update()
     {
+        //Cant spam the D key
         if (Input.GetKeyDown(KeyCode.D) && canDance)
         {
             anim.SetTrigger("Robot_Dance");
