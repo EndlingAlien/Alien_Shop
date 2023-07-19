@@ -1,0 +1,375 @@
+fileFormatVersion: 2
+guid: d11eb40d4a4a647e9b7fb0754864485c
+ModelImporter:
+  serializedVersion: 22200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material
+    second: {fileID: 2100000, guid: 629c5c602d47348b9bff1e98908eb9ee, type: 2}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Scene' has import animation warnings that might
+      lower retargeting quality:\nNote: Activate translation DOF on avatar to improve
+      retargeting quality.\n\t'Taz' has translation animation that will be discarded.\n\t'Noga1.L'
+      has scale animation that will be discarded.\n\t'Noga2.L' has scale animation
+      that will be discarded.\n\t'Noga1.R' has scale animation that will be discarded.\n\t'Noga2.R'
+      has scale animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    nodeNameCollisionStrategy: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    strictVertexDataChecks: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human:
+    - boneName: Kosti
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga1.L
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga1.R
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga2.L
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga2.R
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: spina
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ruka1.L
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ruka1.R
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: uho.L
+      humanName: LeftEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: uho.R
+      humanName: RightEye
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga2.L_end
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ruka2.R
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ruka2.L
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Noga2.R_end
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ruka2.L_end
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ruka2.R_end
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: Robot(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: 1 L
+      parentName: Robot(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Empty
+      parentName: Robot(Clone)
+      position: {x: -1.0221496, y: 0.0000000019663489, z: 0.024578333}
+      rotation: {x: 0.50000006, y: -0.49999997, z: 0.50000006, w: -0.49999997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Empty.001
+      parentName: Robot(Clone)
+      position: {x: 0.8847867, y: 0.0036896067, z: 0.1313767}
+      rotation: {x: 0.50000006, y: 0.49999997, z: 0.50000006, w: 0.49999997}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kosti
+      parentName: Robot(Clone)
+      position: {x: -0.000000018626451, y: 4.600699, z: 0.13776506}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Taz
+      parentName: Kosti
+      position: {x: -0, y: -0.0000101194655, z: -0.00026134626}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Noga1.L
+      parentName: Taz
+      position: {x: -0.008008495, y: 0.0011276865, z: -0.00050530565}
+      rotation: {x: 0.70690674, y: -0.011729437, z: -0.70689917, w: -0.020949218}
+      scale: {x: 1.0036795, y: 1.000003, z: 1.0000004}
+    - name: Noga2.L
+      parentName: Noga1.L
+      position: {x: 2.5029293e-11, y: 0.022739915, z: -0.0000000014077158}
+      rotation: {x: -0.009696617, y: -0.0000040509417, z: -0.00045555623, w: 0.9999529}
+      scale: {x: 1.0000001, y: 0.9999999, z: 0.9999999}
+    - name: Noga2.L_end
+      parentName: Noga2.L
+      position: {x: -0, y: 0.023786161, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Noga1.R
+      parentName: Taz
+      position: {x: 0.008008495, y: 0.0011276865, z: -0.00050530565}
+      rotation: {x: 0.70696366, y: 0.016869893, z: 0.70696956, w: -0.01057656}
+      scale: {x: 1.0036819, y: 1.0000001, z: 1.0000004}
+    - name: Noga2.R
+      parentName: Noga1.R
+      position: {x: -5.4569682e-11, y: 0.022739917, z: -5.4176325e-10}
+      rotation: {x: -0.009696615, y: -0.0000034032194, z: -0.00031033548, w: 0.999953}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: Noga2.R_end
+      parentName: Noga2.R
+      position: {x: -0, y: 0.023786161, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: spina
+      parentName: Taz
+      position: {x: -0, y: 0.0118860435, z: 0}
+      rotation: {x: 0.0028023503, y: -0.00000011920882, z: 3.340662e-10, w: 0.99999607}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Head
+      parentName: spina
+      position: {x: -1.6653345e-18, y: 0.022810996, z: 1.3969846e-11}
+      rotation: {x: -2.3283064e-10, y: 0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: uho.L
+      parentName: Head
+      position: {x: -0.032382276, y: 0.0373591, z: -0.0007579512}
+      rotation: {x: -0.24020697, y: 0.0013015394, z: -0.005310635, w: 0.97070634}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: uho.L_end
+      parentName: uho.L
+      position: {x: -0, y: 0.03158772, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: uho.R
+      parentName: Head
+      position: {x: 0.032382276, y: 0.0373591, z: -0.0007579667}
+      rotation: {x: -0.24036026, y: -0.0013021515, z: 0.00531046, w: 0.9706684}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: uho.R_end
+      parentName: uho.R
+      position: {x: -0, y: 0.03158772, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ruka1.L
+      parentName: spina
+      position: {x: -0.013033085, y: 0.01906429, z: 0.0000000031119376}
+      rotation: {x: 0.007045782, y: -0.0075272117, z: 0.7171961, w: 0.69679517}
+      scale: {x: 0.9999987, y: 0.9999999, z: 1}
+    - name: ruka2.L
+      parentName: ruka1.L
+      position: {x: 6.7520883e-10, y: 0.027588729, z: -1.8626451e-11}
+      rotation: {x: 0.00024535492, y: -0.030449774, z: 0.008055142, w: 0.99950385}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: ruka2.L_end
+      parentName: ruka2.L
+      position: {x: -0, y: 0.015556337, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ruka1.R
+      parentName: spina
+      position: {x: 0.013033085, y: 0.01906429, z: -0.0000000030933112}
+      rotation: {x: -0.0070403973, y: -0.007521806, z: 0.7171962, w: -0.6967952}
+      scale: {x: 0.9999987, y: 0.99999994, z: 1}
+    - name: ruka2.R
+      parentName: ruka1.R
+      position: {x: -0.0000000010666553, y: 0.027588729, z: -5.5879353e-11}
+      rotation: {x: 0.00024582198, y: 0.030508004, z: -0.008055126, w: 0.99950206}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ruka2.R_end
+      parentName: ruka2.R
+      position: {x: -0, y: 0.015556337, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 3
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  importBlendShapeDeformPercent: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
