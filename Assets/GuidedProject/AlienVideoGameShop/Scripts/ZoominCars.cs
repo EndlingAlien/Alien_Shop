@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ZoominCars : MonoBehaviour
 {
+    //this script controlls the cars "pulling in"
     public GameObject[] carObjects;
     public float delayBeforeDelete = 2f; // Delay in seconds before deleting the car
     private GameObject currentCar;

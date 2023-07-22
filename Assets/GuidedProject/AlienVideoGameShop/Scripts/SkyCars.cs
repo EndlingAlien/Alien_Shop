@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class SkyCars : MonoBehaviour
 {
+    //this script controlls the cars flying in the sky
     public GameObject[] carPrefabs;
     public float delayBeforeDelete = 2f; // Delay in seconds before deleting the car
     private GameObject currentCar;

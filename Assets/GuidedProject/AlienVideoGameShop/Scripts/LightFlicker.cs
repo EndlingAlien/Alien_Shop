@@ -27,14 +27,12 @@ public class LightFlicker : MonoBehaviour
         {
             if (isFlickering)
             {
-                Debug.Log("light is off");
                 flickeringObject.SetActive(false); // Deactivate the GameObject
                 isFlickering = false;
                 SetNextFlickerTime();
             }
             else
             {
-                Debug.Log("light is on");
                 flickeringObject.SetActive(true); // Activate the GameObject
                 isFlickering = true;
                 SetNextFlickerTime();
@@ -45,7 +43,6 @@ public class LightFlicker : MonoBehaviour
     private void SetNextFlickerTime()
     {
         nextFlickerTime = Time.time + Random.Range(minActiveTime, maxActiveTime + flickerInterval);
-        Debug.Log("Set new flicker time");
     }
 }
 

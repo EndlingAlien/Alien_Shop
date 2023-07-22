@@ -6,7 +6,6 @@ public class RotateSlow : MonoBehaviour
 {
     public float rotationSpeed = 1f;
 
-    // Update is called once per frame
     void Update()
     {
         //rotate on y Axis then reset to 0 when y = 360/-360
