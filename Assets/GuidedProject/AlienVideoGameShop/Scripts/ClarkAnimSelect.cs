@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ClarkAnimSelect : StateMachineBehaviour
 {
-    private bool turnLeftFinished = false;
 
     // Pick a random number each time you enter a new state to randomize anims
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
