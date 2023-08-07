@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SkyCars : MonoBehaviour
@@ -6,6 +7,10 @@ public class SkyCars : MonoBehaviour
     public GameObject[] carPrefabs;
     public float delayBeforeDelete = 2f; // Delay in seconds before deleting the car
     private GameObject currentCar;
+
+    //create list to add audio clips
+    public List<AudioClip> driveByList = new List<AudioClip>();
+    private AudioSource currentSource; 
 
     private void Start()
     {
@@ -22,9 +27,16 @@ public class SkyCars : MonoBehaviour
         currentCar = Instantiate(carPrefab, transform.position, Quaternion.identity);
         currentCar.transform.parent = transform;
 
+        //get audio source from current prefab
+        currentSource = currentCar.GetComponent<AudioSource>();
+
         // Activate the animator for the car
         Animator carAnimator = currentCar.GetComponent<Animator>();
         carAnimator.enabled = true;
+
+        //pick a random clip from list and play
+        currentSource.clip = driveByList[Random.Range(0, driveByList.Count)];
+        currentSource.PlayDelayed(.2f);
 
         // Start the delay before deleting the car
         Invoke("DeleteCurrentCar", delayBeforeDelete);

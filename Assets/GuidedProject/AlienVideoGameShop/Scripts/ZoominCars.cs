@@ -10,6 +10,10 @@ public class ZoominCars : MonoBehaviour
     private GameObject currentCar;
     private Animator currentAnimator;
 
+    //create list to add audio clips
+    public List<AudioClip> spaceEngineList = new List<AudioClip>();
+    private AudioSource currentSource;
+
     private void Start()
     {
         SpawnRandomCar();
@@ -26,8 +30,16 @@ public class ZoominCars : MonoBehaviour
         currentCar.transform.parent = transform;
         currentAnimator = currentCar.GetComponent<Animator>();
 
+        //get audio source from current prefab
+        currentSource = currentCar.GetComponent<AudioSource>();
+
         // Activate the default animation connected to the car
         currentAnimator.enabled = true;
+
+        //pick a random clip from list and play
+        currentSource.clip = spaceEngineList[Random.Range(0, spaceEngineList.Count)];
+        currentSource.Play();
+        
 
         // Start the delay before deleting the car
         Invoke("DeleteCurrentCar", delayBeforeDelete);
