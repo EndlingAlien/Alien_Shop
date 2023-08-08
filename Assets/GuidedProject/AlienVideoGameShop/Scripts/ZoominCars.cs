@@ -14,9 +14,30 @@ public class ZoominCars : MonoBehaviour
     public List<AudioClip> spaceEngineList = new List<AudioClip>();
     private AudioSource currentSource;
 
+    public CameraController cameraController;
+
     private void Start()
     {
         SpawnRandomCar();
+    }
+
+    private void Update()
+    {
+        // Get the active camera from the camera controller
+        bool isInside = cameraController.IsCameraInside();
+
+
+        //check which camera is active, and adjust audio
+        if (isInside == true)
+        {
+            // Set volume low
+            currentSource.volume = .3f;
+        }
+        else if (isInside == false)
+        {
+            currentSource.volume = 1f;
+        }
+
     }
 
     private void SpawnRandomCar()

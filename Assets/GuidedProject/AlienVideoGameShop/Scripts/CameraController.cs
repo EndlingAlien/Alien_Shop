@@ -11,6 +11,8 @@ public class CameraController : MonoBehaviour
     public GameObject camFive;
     public GameObject camSix;
 
+    private bool camLocation;
+
     //At the start make cam1 active
     void Start()
     {
@@ -20,13 +22,20 @@ public class CameraController : MonoBehaviour
         camFour.SetActive(false);
         camFive.SetActive(false);
         camSix.SetActive(false);
+
+        camLocation = true;
+    }
+
+    public bool IsCameraInside()
+    {
+        return camLocation;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Keys: Q-Y, Control cams
-        if (Input.GetKeyDown(KeyCode.Q))
+        //Keys: 1-6, Control cams
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             camOne.SetActive(true);
             camTwo.SetActive(false);
@@ -34,8 +43,10 @@ public class CameraController : MonoBehaviour
             camFour.SetActive(false);
             camFive.SetActive(false);
             camSix.SetActive(false);
+
+            camLocation = true;
         }
-        else if (Input.GetKeyDown(KeyCode.W))
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             camOne.SetActive(false);
             camTwo.SetActive(true);
@@ -43,8 +54,10 @@ public class CameraController : MonoBehaviour
             camFour.SetActive(false);
             camFive.SetActive(false);
             camSix.SetActive(false);
+
+            camLocation = true;
         }
-        else if (Input.GetKeyDown(KeyCode.E))
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             camOne.SetActive(false);
             camTwo.SetActive(false);
@@ -52,8 +65,10 @@ public class CameraController : MonoBehaviour
             camFour.SetActive(false);
             camFive.SetActive(false);
             camSix.SetActive(false);
+
+            camLocation = true;
         }
-        else if (Input.GetKeyDown(KeyCode.R))
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             camOne.SetActive(false);
             camTwo.SetActive(false);
@@ -61,8 +76,10 @@ public class CameraController : MonoBehaviour
             camFour.SetActive(true);
             camFive.SetActive(false);
             camSix.SetActive(false);
+
+            camLocation = true;
         }
-        else if (Input.GetKeyDown(KeyCode.T))
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             camOne.SetActive(false);
             camTwo.SetActive(false);
@@ -70,8 +87,10 @@ public class CameraController : MonoBehaviour
             camFour.SetActive(false);
             camFive.SetActive(true);
             camSix.SetActive(false);
+
+            camLocation = false;
         }
-        else if (Input.GetKeyDown(KeyCode.Y))
+        else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
             camOne.SetActive(false);
             camTwo.SetActive(false);
@@ -79,6 +98,8 @@ public class CameraController : MonoBehaviour
             camFour.SetActive(false);
             camFive.SetActive(false);
             camSix.SetActive(true);
+
+            camLocation = false;
         }
     }
 }

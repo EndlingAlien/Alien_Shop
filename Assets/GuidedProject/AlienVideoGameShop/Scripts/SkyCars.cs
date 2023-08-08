@@ -10,11 +10,31 @@ public class SkyCars : MonoBehaviour
 
     //create list to add audio clips
     public List<AudioClip> driveByList = new List<AudioClip>();
-    private AudioSource currentSource; 
+    private AudioSource currentSource;
+
+    public CameraController cameraController;
 
     private void Start()
     {
         SpawnRandomCar();
+    }
+
+    private void Update()
+    {
+        // Get the active camera from the camera controller
+        bool isInside = cameraController.IsCameraInside();
+
+
+        //check which camera is active, and adjust audio
+        if(isInside == true)
+        {
+            // Set volume low
+            currentSource.volume = .15f;
+        } else if (isInside == false)
+        {
+            currentSource.volume = 1f;
+        }
+
     }
 
     private void SpawnRandomCar()
@@ -30,13 +50,14 @@ public class SkyCars : MonoBehaviour
         //get audio source from current prefab
         currentSource = currentCar.GetComponent<AudioSource>();
 
+
         // Activate the animator for the car
         Animator carAnimator = currentCar.GetComponent<Animator>();
         carAnimator.enabled = true;
 
         //pick a random clip from list and play
         currentSource.clip = driveByList[Random.Range(0, driveByList.Count)];
-        currentSource.PlayDelayed(.2f);
+        currentSource.PlayDelayed(.3f);
 
         // Start the delay before deleting the car
         Invoke("DeleteCurrentCar", delayBeforeDelete);
