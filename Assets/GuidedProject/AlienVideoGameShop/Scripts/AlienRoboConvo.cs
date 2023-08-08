@@ -9,8 +9,8 @@ public class AlienRoboConvo : MonoBehaviour
     public GameObject alienAudio;
     private AudioSource robotSource;
     private AudioSource alienSource;
-    public AudioClip[] alienClips;
-    public AudioClip[] robotClips;
+    public List<AudioClip> alienClips;
+    public List<AudioClip> robotClips;
 
     // Start is called before the first frame update
     void Start()
@@ -35,7 +35,7 @@ public class AlienRoboConvo : MonoBehaviour
 
     private void PlayRandomRobotClip()
     {
-        int randomRange = Random.Range(0,7);
+        int randomRange = Random.Range(0,robotClips.Count);
         AudioClip randomClip = robotClips[randomRange];
         robotSource.clip = randomClip;
         robotSource.Play();
@@ -43,7 +43,7 @@ public class AlienRoboConvo : MonoBehaviour
 
     private void PlayRandomAlienClip()
     {
-        int randomRange = Random.Range(0,6);
+        int randomRange = Random.Range(0,alienClips.Count);
         AudioClip randomClip = alienClips[randomRange];
         alienSource.clip = randomClip;
         alienSource.Play();
