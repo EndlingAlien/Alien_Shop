@@ -12,6 +12,7 @@ public class CameraController : MonoBehaviour
     public GameObject camSix;
 
     private bool camLocation;
+    private int camNum;
 
     //At the start make cam1 active
     void Start()
@@ -31,6 +32,11 @@ public class CameraController : MonoBehaviour
         return camLocation;
     }
 
+    public int ActiveCamNum()
+    {
+        return camNum;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -45,6 +51,7 @@ public class CameraController : MonoBehaviour
             camSix.SetActive(false);
 
             camLocation = true;
+            camNum = 1;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
@@ -56,6 +63,7 @@ public class CameraController : MonoBehaviour
             camSix.SetActive(false);
 
             camLocation = true;
+            camNum = 2;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
@@ -67,6 +75,7 @@ public class CameraController : MonoBehaviour
             camSix.SetActive(false);
 
             camLocation = true;
+            camNum = 3;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
         {
@@ -78,6 +87,7 @@ public class CameraController : MonoBehaviour
             camSix.SetActive(false);
 
             camLocation = true;
+            camNum = 4;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha5))
         {
@@ -89,6 +99,7 @@ public class CameraController : MonoBehaviour
             camSix.SetActive(false);
 
             camLocation = false;
+            camNum = 5;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha6))
         {
@@ -100,6 +111,7 @@ public class CameraController : MonoBehaviour
             camSix.SetActive(true);
 
             camLocation = false;
+            camNum = 6;
         }
     }
 }
