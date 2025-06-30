@@ -1,2 +1,14 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+# Ignore Unity-generated and asset files for language stats
+*.meta linguist-vendored
+*.mat linguist-vendored
+*.anim linguist-vendored
+*.prefab linguist-vendored
+*.unity linguist-vendored
+*.asset linguist-vendored
+ProjectSettings/* linguist-vendored
+Library/* linguist-vendored
+Temp/* linguist-vendored
+# Ignore shaders and other formats if not your main language
+*.shader linguist-vendored
