@@ -1,6 +1,6 @@
-# Alien Game Shop
+# Stellar Films
 
-**Alien Game Shop** is a captivating, atmospheric Unity experience where you explore a quirky alien store through a network of surveillance cameras. This project is a tiny window into a strange, lively world — more vibe and immersion than game.
+**Stellar Films (Alien_Shop)** is a captivating, atmospheric Unity experience where you explore a quirky alien store through a network of surveillance cameras. This project is a tiny window into a strange, lively world — more vibe and immersion than game.
 
 ---
 
@@ -30,7 +30,7 @@ Also born from Unity’s Creative Core course, I took the asset base and ran wil
 
 ## Status
 
-**Complete** — Ready to package and upload to Itch.io.
+**Complete** — Published on [Itch.io](https://endlingalien.itch.io/stellar-films)
 
 ---
 
@@ -42,5 +42,5 @@ A project where atmosphere and technical polish converge. Alien Game Shop is my 
 
 ## Coming Soon
 
-Playable build will be available on Itch.io soon.
+Try it here: [Stellar Films on Itch.io](https://endlingalien.itch.io/stellar-films)
 
