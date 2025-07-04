@@ -1,12 +1,12 @@
 # Stellar Films
 
-**Stellar Films (Alien_Shop)** is a captivating, atmospheric Unity experience where you explore a quirky alien store through a network of surveillance cameras. This project is a tiny window into a strange, lively world — more vibe and immersion than game.
+**Stellar Films (Alien_Shop)** is a captivating, atmospheric Unity experience where you explore a quirky alien store through a network of surveillance cameras. This project is a tiny window into a strange, lively world.
 
 ---
 
 ## Why I Made This
 
-Also born from Unity’s Creative Core course, I took the asset base and ran wild with it—building new animations, menus, soundscapes, code, and VFX to create what I believe is my most immersive project yet. The alien theme let me flex some sci-fi world-building muscle.
+Also born from Unity’s Creative Core course, I took the asset base and ran wild with it. The alien theme let me flex some sci-fi world-building muscle.
 
 ---
 
@@ -23,8 +23,15 @@ Also born from Unity’s Creative Core course, I took the asset base and ran wil
 
 - Unity (2021.x)
 - C#
-- Custom UI and camera control systems
-- Original sound design, animations, and VFX
+- Unity
+  - Basic Animation
+  - Particles & VFX
+  - Lighting
+  - Custom UI
+  - Post-Processing
+  - Soundscape
+  - Materials and Shaders
+  - Custom Cameras
 
 ---
 
